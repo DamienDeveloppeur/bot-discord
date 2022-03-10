@@ -20,6 +20,7 @@ client.on("interactionCreate", async interaction => {
  * Listen message send
  * return : 
  */
+//
 client.on('message', (message) => {
     //if exp is not null : use the non-null assertion operator ! to coerce away those types:
     if (message.mentions.has(client.user!.id)) {
