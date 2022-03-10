@@ -14,7 +14,7 @@ for (const module of Object.values<Command>(commandModules)) {
 }
 
 const rest = new REST({ version : "9"}).setToken(config.DISCORD_TOKEN)
-
+console.log(config)
 rest.put(Routes.applicationGuildCommands(config.CLIENT_ID, config.GUILD_ID), {body : commands}).then(() => {
     console.log("OKAY successfully register")
 }).catch(console.error)
