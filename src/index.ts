@@ -1,1 +1,1 @@
-console.log("hello bot discord !")
+import './bot'
